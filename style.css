@@ -1,0 +1,56 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        width: 200vh;
+        height: 100vh;
+        background: black;
+        display: flex;
+    }
+    
+    #tabuleiro {
+        width: 640px;
+        height: 640px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .memory-card:active {
+        transform: scale(0.97);
+    }
+    
+    .memory-card {
+        width: 25%;
+        height: 25%;
+        position: relative;
+        margin: 2px;
+        transform-style: preserve-3d;
+        transition: 0.5s;
+    }
+    
+    .memory-card.virar {
+        transform: rotateY(180deg);
+    }
+    
+    .frente-carta,
+    .fundo-carta {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .frente-carta {
+        transform: rotateY(180deg);
+    }
+    
+    #placar {
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    
+    h1 {
+        text-align: center;
+    }
